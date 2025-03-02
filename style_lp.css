@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box; /* Define que todo e qualquer elemento terá sua borda calculada a partir dessa definição */
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background-image: url(background.jpg);
+    background-size: cover;
+}
+
+.container {
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+}
+
+.cabecalho {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    height: 70px;
+    width: 100%;
+    background-color: #302416;
+    opacity: 87%;
+}
+
+.cabecalho img {
+    margin-top: 4%;
+    padding-left: 4%;
+    width: 150px;
+    height: 60px;
+}
+
+.links-pags-externas a {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    font-size: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+    text-decoration: none;
+    position: static;
+}
+
+.conteudo-1 {
+    display: flex;
+    width: 100%;
+    height: 92%;
+    gap: 10%;
+}
+
+.fotos {
+    display: inline-flex;
+    position: relative;
+    max-width: 50%;;
+}
+
+.img1 {
+    display: flex;
+    width: 50%;
+    height: 45%;
+    max-width: 50%;
+    margin-top: 2%;
+    margin-left: 55px;
+    position: relative;
+}
+
+.img2 {
+    height: 90%;
+    max-width: 70%;
+    position: relative;
+    align-self: flex-end;
+    left: -23%;
+}
+
+.img3 {
+    height: 90%;
+    max-width: 70%;
+    position: relative;
+    left: -38%;
+    align-self: flex-end;
+}
+
+.img2:hover {
+    content: url('6.png'); 
+}
+
+.img3:hover {
+    content: url('7.png'); 
+}
+
+
+.links-pags-externas-2 {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    width: 80%;
+}
+
+.rodape {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    align-self: flex-end;
+    height: 9%;
+    width: 100%;
+    background-color: #000000ce;
+    
+}
+    
+.rodape .links-pags-externas-2 {
+    width: 100%;
+    max-width: 1200px; 
+}
+
+.rodape .links-pags-externas-2 a {
+    font-family: "Helvetica", sans-serif;
+    color: white;
+    font-size: 19px; 
+    text-decoration: none;
+}
+
+.links-pags-externas-2 a:hover {
+    text-decoration: underline; 
+}
+
